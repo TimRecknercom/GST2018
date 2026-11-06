@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+  <title>Santa's Village — Google Santa Tracker</title>
+  <meta name="description" content="Follow Santa Claus around the world with Google Santa Tracker on Google Maps.">
+  <meta property="og:title" content="Santa's Village — Google Santa Tracker">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://santatracker.google.com/images/og.png">
+  <meta name="twitter:description" content="Follow Santa Claus around the world with Google Santa Tracker on Google Maps.">
+  <meta name="twitter:image" content="https://santatracker.google.com/images/og.png">
+  <meta name="theme-color" content="#00c6ed">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,800|Lobster" rel="stylesheet">
+  <link href="https://maps.gstatic.com/mapfiles/santatracker/v201812132012/sass/santatracker.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+
+  <script src="/js/clock-simulation.js"></script>
+  <script src="/js/api-redirect.js"></script>
+
+  <script>
+    window.customElements || document.write('<!--');
+  </script>
+  <script src="https://maps.gstatic.com/mapfiles/santatracker/v201812132012/components/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+  <!--!do not remove-->
+  <script>
+    !function () {}();
+  </script>
+  <!--
+    HTML Imports were removed from modern Chromium-based browsers. The old
+    elements_en.html import therefore leaves the page on its blue loading
+    background. The loader recreates that import with fetch and DOM parsing.
+  -->
+  <script src="/js/santa-elements-loader.js"></script>
+</head>
+
+<body class="scrollock" data-static="https://maps.gstatic.com/mapfiles/santatracker/v201812132012/" data-version="v201812132012" unresolved>
+  <santa-app id="santaApp" routing></santa-app>
+  <santa-countdown aria-atomic="false" aria-live="assertive" aria-relevant="additions" hidden role="timer"></santa-countdown>
+  <santa-notice></santa-notice>
+
+  <script src="/js/countdown-bar-2018.js"></script>
+  <script src="/js/unlock-all-games.js"></script>
+  <script>
+    if (window.Polymer && Polymer.setPassiveTouchGestures) {
+      Polymer.setPassiveTouchGestures(true);
+    }
+  </script>
+</body>
+</html>
